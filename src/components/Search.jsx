@@ -79,7 +79,7 @@ const Search = () => {
             alignItems: 'center'
         }}>
 
-            <h1>Search Form</h1>
+            <h1>SEARCH FORM</h1>
 
 
             <div className='container'>
