@@ -48,8 +48,3 @@ Make sure you have the following installed:
     ```
 2. Or view live:
 https://digipietask-by-rohit.netlify.app/
-
-2. Open your browser and navigate to:
-    ```
-    http://localhost:3000
-    ```
