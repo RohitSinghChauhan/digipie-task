@@ -33,4 +33,35 @@ button {
         width: 100%;
         margin: 5px 0;
     }
+
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    input,
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+}
+
+/* Additional responsive design for medium screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+
+}
+
+/* Ensuring container is centered on large screens */
+@media (min-width: 1025px) {
+    .container {
+        width: 80%;
+    }
 }

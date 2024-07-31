@@ -54,12 +54,18 @@ const Search = () => {
     };
 
     return (
-        <div style={{ width: '100%', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            flexDirection: 'column',
+            alignItems: 'center'
+        }}>
 
             <h1>Search Form</h1>
 
 
-            <div style={{ width: '50%' }}>
+            <div className='container'>
                 {/* Search input field */}
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <input type="text" value={query} onChange={handleSearch} placeholder="Search for titles..." style={{ border: '0', outline: '0' }} />
