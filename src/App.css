@@ -1,0 +1,36 @@
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+@media (max-width: 600px) {
+
+    input,
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
