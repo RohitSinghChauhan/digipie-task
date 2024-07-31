@@ -53,6 +53,23 @@ const Search = () => {
         setHistory([]);
     };
 
+
+    const highlightText = (text, highlight) => {
+        if (!highlight.trim()) {
+            return text;
+        }
+        const parts = text.split(new RegExp(`(${highlight})`, 'gi'));
+        return (
+            <span>
+                {parts.map((part, index) =>
+                    part.toLowerCase() === highlight.toLowerCase() ? <p key={index}
+                        style={{ fontWeight: '700', fontSize: '18px', display: 'inline-block' }}>
+                        {part}</p> : part
+                )}
+            </span>
+        );
+    };
+
     return (
         <div style={{
             width: '100%',
@@ -83,7 +100,7 @@ const Search = () => {
                 <ul style={{ maxHeight: '50vh', overflowY: 'scroll', marginBottom: '1rem', border: '1px solid gray' }}>
                     {temp ? results.map(result => (
                         <li key={result.id} onClick={() => handleSelectResult(result)}>
-                            {result.title}
+                            {highlightText(result.title, query)}
                         </li>
                     )) : null}
                 </ul>
